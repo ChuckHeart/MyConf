@@ -1,0 +1,29 @@
+set number relativenumber
+set scrolloff=10
+set clipboard=unnamedplus
+
+set autoindent
+set sw=4
+set ts=4
+
+"退出编辑模式
+inoremap jk <Esc>
+
+"行首 行尾
+noremap H ^
+noremap L $
+
+"注释 增加 和 删除
+vnoremap zi :s/^/\/\/<cr>
+vnoremap zu :s/\/\//<cr>
+nnoremap zi :s/^/\/\/<cr>
+nnoremap zu :s/\/\//<cr>
+
+"代码折叠
+nnoremap <space> za
+
+:vnoremap gq ==
+:nnoremap gq ==
+
+nnoremap J gt
+nnoremap K gT
