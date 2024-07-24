@@ -25,5 +25,15 @@ nnoremap <space> za
 :vnoremap gq ==
 :nnoremap gq ==
 
-nnoremap J gt
-nnoremap K gT
+nnoremap K gt
+nnoremap J gT
+
+"ctrl移动内容
+nnoremap <C-j> :m +1<CR>
+nnoremap <C-k> :m -2<CR>
+inoremap <C-j> <Esc> :m +1<CR>gi
+inoremap <C-k> <Esc> :m -2<CR>gi
+xnoremap <C-j> :m '>+1<cr>gv=gv
+xnoremap <C-k> :m '<-2<cr>gv=gv
+
+nnoremap x "_x
